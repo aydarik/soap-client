@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/aydarik/soap-client.svg?branch=master)](https://travis-ci.org/aydarik/soap-client)
+
+# SOAP File Search
+
 ### Сборка
 * Настроить параметры в `filereader.properties`
     * ```
