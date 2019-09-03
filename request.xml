@@ -1,0 +1,9 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:gs="http://gumerbaev.ru/soapclient/filesearch">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <gs:findNumberRequest>
+            <gs:number>1716526</gs:number>
+        </gs:findNumberRequest>
+    </soapenv:Body>
+</soapenv:Envelope>
