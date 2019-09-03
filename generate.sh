@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 FILES_CNT=20
-DIR='/e/files'
+DIR='/tmp/files'
 MAX_NUMBERS=30000000
 MAX_VALUES=999999999
 

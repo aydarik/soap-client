@@ -1,9 +1,9 @@
 ### Сборка
-* Настроить параметры в `application.properties`
+* Настроить параметры в `filereader.properties`
     * ```
       # Internal settings
       file-reader.buffer-size=65536
-      file-reader.files.location=E:\\files\\
+      file-reader.files.location=/tmp/files
       file-reader.files.extension=txt
       ```
 * Выполнить `./mvnw clean package`
@@ -18,7 +18,7 @@
     * открыть файл `generate.sh` и настроить параметры генерации данных
     ```
     FILES_CNT=20
-    DIR='/e/files'
+    DIR='/tmp/files'
     MAX_NUMBERS=30000000
     MAX_VALUES=999999999
     ```
