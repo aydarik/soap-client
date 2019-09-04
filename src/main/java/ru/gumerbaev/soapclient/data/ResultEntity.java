@@ -54,11 +54,13 @@ public class ResultEntity {
         }
 
         final String error = result.getError();
-        if (error.length() > ERROR_MAX_SIZE) {
-            log.warn("Error is not fully saved in DB");
-            this.error = error.substring(0, ERROR_MAX_SIZE);
-        } else {
-            this.error = error;
+        if (error != null) {
+            if (error.length() > ERROR_MAX_SIZE) {
+                log.warn("Error is not fully saved in DB");
+                this.error = error.substring(0, ERROR_MAX_SIZE);
+            } else {
+                this.error = error;
+            }
         }
     }
 
