@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
+import ru.gumerbaev.soapclient.enums.StatusCode;
 import ru.gumerbaev.soapclient.filesearch.Result;
 
 import java.io.File;
@@ -117,11 +118,11 @@ public class FileSearchReader {
 
         // Put correct status to the result object
         if (hasError.get()) {
-            result.setCode("02.Result.Error");
+            result.setCode(StatusCode.ERROR.toString());
         } else if (resultFiles.isEmpty()) {
-            result.setCode("01.Result.NotFound");
+            result.setCode(StatusCode.NOT_FOUND.toString());
         } else {
-            result.setCode("00.Result.OK");
+            result.setCode(StatusCode.OK.toString());
         }
         return result;
     }
